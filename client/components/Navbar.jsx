@@ -1,10 +1,46 @@
-import React from 'react';
+"use client";
+
+import Link from "next/Link";
+import { usePathname} from "next/navigation";
+
+const Links = [
+    {
+        name: 'home',
+        path: '/',
+    },
+    {
+        name: 'resume',
+        path: '/resume',
+    },
+    {
+        name: 'projects',
+        path: '/projects',
+    },
+    {
+        name: 'contact',
+        path: '/contact',
+    },
+];
 
 const Nav = () => {
+    const pathname = usePathname();
+    console.log(pathname);
+
     return (
-        <div>
-            Navbar goes here
-        </div>
+        <nav className="flex gap-8">
+            {Links.map((link, index) => {
+                return (
+                    <Link 
+                        href={link.path} 
+                        key={index} 
+                        className={`${
+                            link.path === pathname && "text-accent border-b-2 border-accent"}`}
+                    >
+                        {link.name}
+                    </Link>
+                );
+            })}
+        </nav>
     )
 }
 
