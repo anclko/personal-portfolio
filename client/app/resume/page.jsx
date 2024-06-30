@@ -56,6 +56,36 @@ const about = {
     ]
 };
 
+//experience
+const experience = {
+    icon: '/assets/resume/badge.svg',
+    title: 'My Experience',
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    items: [
+        {
+            company: "Company",
+            position: "Position",
+            duration: "Duration",
+        },
+        {
+            company: "Company",
+            position: "Position",
+            duration: "Duration",
+        },
+        {
+            company: "Company",
+            position: "Position",
+            duration: "Duration",
+        },
+        {
+            company: "Company",
+            position: "Position",
+            duration: "Duration",
+        },
+    ]
+};
+
 const Resume = () => {
     return (
         <div>Resume page</div>
