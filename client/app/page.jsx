@@ -3,6 +3,7 @@ import { FiDownload } from 'react-icons/fi';
 
 import Social from '@/components/Social';
 import Photo from '@/components/Photo';
+import Stats from '@/components/Stats';
 
 const Home = () => {
   return <section className="h-full">
@@ -48,9 +49,9 @@ const Home = () => {
         <div className="order-1 xl:order-none mb-8 xl:mb-0">
           <Photo />
         </div>
-
       </div> 
     </div>
+    <Stats />
   </section>
 }
 
