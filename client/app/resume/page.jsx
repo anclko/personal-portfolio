@@ -86,6 +86,36 @@ const experience = {
     ]
 };
 
+//education
+const education = {
+    icon: '/assets/resume/cap.svg',
+    title: 'My Education',
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    items: [
+        {
+            institution: "School",
+            degree: "Position",
+            duration: "Duration",
+        },
+        {
+            institution: "School",
+            degree: "Position",
+            duration: "Duration",
+        },
+        {
+            institution: "School",
+            degree: "Position",
+            duration: "Duration",
+        },
+        {
+            institution: "School",
+            degree: "Position",
+            duration: "Duration",
+        },
+    ]
+};
+
 const Resume = () => {
     return (
         <div>Resume page</div>
