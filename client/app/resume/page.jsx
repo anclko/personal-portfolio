@@ -14,7 +14,6 @@ import {
     SiNextdotjs
 } from "react-icons/si"
 
-
 //about me
 const about = {
     title: 'About Me',
@@ -115,6 +114,47 @@ const education = {
         },
     ]
 };
+
+//skills
+const skill = {
+    title: "My Skills",
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    skillList: [
+        {
+            icon: <FaHtml5 />,
+            name: "HTML 5",
+        },
+        {
+            icon: <FaCss3 />,
+            name: "CSS 3",
+        },
+        {
+            icon: <FaJs />,
+            name: "JavaScript",
+        },
+        {
+            icon: <FaReact />,
+            name: "React",
+        },
+        {
+            icon: <SiNextdotjs />,
+            name: "Next.js",
+        },
+        {
+            icon: <FaNodeJs />,
+            name: "Node.js",
+        },
+        {
+            icon: <SiTailwindcss />,
+            name: "Tailwind CSS",
+        },
+        {
+            icon: <FaFigma />,
+            name: "Figma",
+        }
+    ]
+}
 
 const Resume = () => {
     return (
