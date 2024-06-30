@@ -14,6 +14,17 @@ import {
     SiNextdotjs
 } from "react-icons/si"
 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/scroll-area"
+
+import { motion } from "framer-motion"
+
 //about me
 const about = {
     title: 'About Me',
@@ -158,8 +169,32 @@ const skill = {
 
 const Resume = () => {
     return (
-        <div>Resume page</div>
-    )
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+                delay: 2.4,
+                ease: "easeInOut",
+            },
+        }}
+
+        className="min-h-[88mv] flex items-center justify-center py-12 xl:py-0"
+    >
+        <div className="container mx-auto">
+            <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+                <TabsList>
+                    <TabsTrigger>About Me</TabsTrigger>
+                    <TabsTrigger>Experience</TabsTrigger>
+                    <TabsTrigger>Education</TabsTrigger>
+                    <TabsTrigger>Skills</TabsTrigger>
+                </TabsList>
+            </Tabs>
+        </div>
+
+      </motion.div>
+    );
 }
 
 export default Resume
