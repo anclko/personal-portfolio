@@ -180,21 +180,47 @@ const Resume = () => {
             },
         }}
 
-        className="min-h-[88mv] flex items-center justify-center py-12 xl:py-0"
+        className="min-h-[88vh] flex items-center justify-center py-12 xl:py-0"
     >
         <div className="container mx-auto">
-            <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-                <TabsList>
-                    <TabsTrigger>About Me</TabsTrigger>
-                    <TabsTrigger>Experience</TabsTrigger>
-                    <TabsTrigger>Education</TabsTrigger>
-                    <TabsTrigger>Skills</TabsTrigger>
+            <Tabs 
+            defaultValue="experience" 
+            className="flex flex-col xl:flex-row gap-[60px]"
+            >
+                <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 
+                gap-6">
+                    <TabsTrigger value="experience">Experience</TabsTrigger>
+                    <TabsTrigger value="education">Education</TabsTrigger>
+                    <TabsTrigger value="skills">Skills</TabsTrigger>
+                    <TabsTrigger value="about">About Me</TabsTrigger>
                 </TabsList>
+
+                <div className="min-h-[70vh] w-full">
+                    {/* experience */}
+                    <TabsContent value="experience" className="w-full">
+                        experience
+                    </TabsContent>
+
+                    {/* education */}
+                    <TabsContent value="education" className="w-full">
+                        education
+                    </TabsContent>
+
+                    {/* skills */}
+                    <TabsContent value="skills" className="w-full">
+                        skills
+                    </TabsContent>
+
+                    {/* about us */}
+                    <TabsContent value="about" className="w-full">
+                        about us
+                    </TabsContent>
+                </div>
             </Tabs>
         </div>
 
       </motion.div>
     );
-}
+};
 
 export default Resume
