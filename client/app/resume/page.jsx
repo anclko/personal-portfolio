@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react';
 import { 
     FaHtml5, 
     FaCss3, 
@@ -21,7 +22,7 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/scroll-area"
+} from "@/components/ui/tooltip"
 
 import { ScrollArea } from "@/components/ui/scroll-area"
 
@@ -251,7 +252,7 @@ const Resume = () => {
                     {/* education */}
                     <TabsContent value="education" className="w-full">
                     <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                            <h3 className="text-4xl font-bold">{experience.title}</h3>
+                            <h3 className="text-4xl font-bold">{education.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                             {education.description}
                             </p>
@@ -312,14 +313,12 @@ const Resume = () => {
 
                     {/* about us */}
                     <TabsContent value="about" className="w-full">
-                        about us
                     </TabsContent>
                 </div>
             </Tabs>
         </div>
-
       </motion.div>
     );
 };
 
-export default Resume
+export default Resume;
