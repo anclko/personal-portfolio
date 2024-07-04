@@ -1,6 +1,5 @@
 "use client"
 
-import React from 'react';
 import { 
     FaHtml5, 
     FaCss3, 
@@ -40,7 +39,7 @@ const about = {
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+46) 793 566 601)"
+            fieldValue: "(+46) 793 566 601"
         },
         {
             fieldName: "Experience",
@@ -60,7 +59,7 @@ const about = {
         },
         {
             fieldName: "Job Status",
-            fieldValue: "Available to work now"
+            fieldValue: "Available"
         },
         {
             fieldName: "Languages",
@@ -290,17 +289,20 @@ const Resume = () => {
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                               {skill.description}
                             </p>
-                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                               {skill.skillList.map((skill, index) => {
-                                return(
+                                return (
                                   <li key={index}>
-                                    <TooltipProvider>
+                                    <TooltipProvider delayDuration={100}>
                                       <Tooltip>
-                                        <TooltipTrigger>
-                                            <div>
+                                        <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                            <div className="text-6xl group-hover:text-accent transition-all duration-300 ">
                                               {skill.icon}
                                             </div>
                                         </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p className="capitalize">{skill.name}</p>
+                                        </TooltipContent>
                                       </Tooltip>
                                     </TooltipProvider>
                                   </li>
@@ -312,7 +314,27 @@ const Resume = () => {
                     </TabsContent>
 
                     {/* about us */}
-                    <TabsContent value="about" className="w-full">
+                    <TabsContent 
+                      value="about" 
+                      className="w-full text-center xl:text-left"
+                    >
+
+                      <div className="flex flex-col gap-[30px]">
+                        <h3 className="text-4xl font-bold">{about.title}</h3>
+                        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                          {about.description}
+                        </p>
+                        <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                          {about.info.map((item, index) => {
+                            return (
+                                <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                                  <span className="text-white/60">{item.fieldName}</span>
+                                  <span className="text-xl">{item.fieldValue}</span>
+                                </li>
+                            )
+                          })}
+                        </ul>
+                      </div>
                     </TabsContent>
                 </div>
             </Tabs>
