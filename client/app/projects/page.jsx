@@ -80,6 +80,14 @@ const projects = [
 
 const Work = () => {
     const [project, setProject] = useState(projects[0]);
+
+    const handleSlideChange = (swiper) => {
+      //get current slide index
+      const currentIndex = swiper.activeIndex;
+      //update project state based on current slide index
+      setProject(projects[currentIndex]);
+
+    }
     
     return (
       <motion.section
@@ -89,9 +97,8 @@ const Work = () => {
       >
         <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col
-            xl: justify-between order-2 xl:order-none">
-              <div className="flex flex-col gap-[30px]">
+            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+              <div className="flex flex-col gap-[30px] h-[50%]">
                 {/*number outline*/}
                 <div
                   className="text-8xl leading-none font-extrabold text-transparent"
@@ -165,7 +172,32 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full">Sliders</div>
+            <div className="w-full xl:w-[50%]">
+              <Swiper 
+                spaceBetween={30} 
+                slidesPerView={1} 
+                className="xl:h-[520px] mb-12"
+                onSlideChange={handleSlideChange}
+              >
+                {projects.map((project, index) => {
+                  return<SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                      {/* overflow */}
+                      <div></div>
+                      {/* image */}
+                      <div className="relative w-full h-full">
+                        <Image 
+                          src={project.image} 
+                          fill 
+                          className="object-cover" 
+                          alt="project picture"
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                })}
+              </Swiper>
+            </div>
           </div>
         </div>
       </motion.section>
