@@ -91,10 +91,14 @@ const Work = () => {
           <div className="flex flex-col xl:flex-row xl:gap-[30px]">
             <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col
             xl: justify-between order-2 xl:order-none">
-              <div>
-
+              <div className="flex flex-col gap-[30px]">
                 {/*number outline*/}
-                <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                <div
+                  className="text-8xl leading-none font-extrabold text-transparent"
+                  style={{
+                  WebkitTextStroke: '1px white'
+                  }}
+                >
                   {project.num}
                 </div>
 
@@ -124,7 +128,7 @@ const Work = () => {
                 <div className="border border-white/20"></div>
 
                 {/*buttons*/}
-                <div>
+                <div className="flex items-center gap-4">
                   {/*live project*/}
                   <Link href={project.live}>
                     <TooltipProvider delayDuration={100}>
@@ -148,7 +152,7 @@ const Work = () => {
                       <Tooltip>
                         
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
 
                         <TooltipContent>
@@ -159,7 +163,6 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>
                 </div>
-
               </div>
             </div>
             <div className="w-full">Sliders</div>
