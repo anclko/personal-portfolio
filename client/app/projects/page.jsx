@@ -21,14 +21,14 @@ import Image from "next/image";
 const projects = [
     {
         num: "01",
-        category: "fullstack",
+        category: "Fullstack",
         title: "Funbyte",
         description: 
           "Part of Fullstack Development end of year project. This website offers a fun and interative way to learn with flashcards.",
         stack: 
         [
-            { name: "Html 5" }, { name: "Css 3" }, { name: "Javascript"}, { name: "Node.js" }, { name: "Express.js" }, { name: "DaisyUI"},
-            { name: "MongoDB"}, { name: "React"}, { name: "Tailwind CSS"}, { name: "jira software"}
+            { name: "HTML" }, { name: "Javascript"}, { name: "Node.js" }, { name: "Express.js" },
+            { name: "MongoDB"}, { name: "React"}, { name: "Tailwind CSS"}
         ],
         image: '/assets/work/Project1.jpg',
         live: '',
@@ -92,10 +92,35 @@ const Work = () => {
             <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col
             xl: justify-between order-2 xl:order-none">
               <div>
-                {/*Number outline*/}
+
+                {/*number outline*/}
                 <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                   {project.num}
                 </div>
+
+                {/*project category*/}
+                <h2 className="text-[42px] font-bold leading-none text-white
+                group-hover:text-accent transition-all duration-500 capitalize">
+                  {project.category} project     
+                </h2>
+
+                {/*project category*/}
+                <p className="text-white/60 ">
+                  {project.description}
+                </p>
+
+                {/*stack*/}
+                <ul className="flex gap-4">
+                  {project.stack.map((item, index) => {
+                    return (
+                      <li key={index} className="text-xl text-accent">
+                        {item.name}
+                        {index !== project.stack.length - 1 && ","}
+                      </li>
+                    );
+                  })}
+                </ul>
+
               </div>
             </div>
             <div className="w-full">Sliders</div>
