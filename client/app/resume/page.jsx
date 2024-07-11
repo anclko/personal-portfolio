@@ -34,16 +34,8 @@ const about = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
     info: [
         {
-            fieldName: "Name",
-            fieldValue: "Anne-Claire Koch"
-        },
-        {
-            fieldName: "Phone",
-            fieldValue: "(+46) 793 566 601"
-        },
-        {
             fieldName: "Experience",
-            fieldValue: "2 Years"
+            fieldValue: "3 Years (Studies)"
         },
         {
             fieldName: "Location",
@@ -55,7 +47,7 @@ const about = {
         },
         {
             fieldName: "Email",
-            fieldValue: "ackoch@hotmail.com"
+            fieldValue: "anclko@hotmail.com"
         },
         {
             fieldName: "Job Status",
