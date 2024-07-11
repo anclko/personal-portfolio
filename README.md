@@ -20,5 +20,6 @@ You can view the live site here: [Personal Portfolio](https://personal-portfolio
 
 ## Installation
 
-```git clone https://github.com/your-username/personal-portfolio.git```
-```cd personal-portfolio```
+```git clone https://github.com/your-username/personal-portfolio.git
+cd personal-portfolio```
+
