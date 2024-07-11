@@ -18,7 +18,7 @@ const Header = () => {
                 {/* Desktop navbar*/}
                 <div className="hidden xl:flex items-center gap-8">
                     <Navbar />
-                    <a href="mailto:ackoch@hotmail.com">
+                    <a href="mailto:anclko@hotmail.com">
                         <Button>Hire Me</Button>
                     </a>
                 </div>
