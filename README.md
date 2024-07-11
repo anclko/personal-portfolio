@@ -4,7 +4,7 @@ Welcome to my personal portfolio site! This site is designed to host my projects
 
 ## Live Site
 
-You can view the live site here: [Personal Portfolio](https://personal-portfolio-gv490ujgg-anclkos-projects.vercel.app/resume)
+You can view the live site here: [Personal Portfolio](https://personal-portfolio-gv490ujgg-anclkos-projects.vercel.app)
 
 ## Features
 
