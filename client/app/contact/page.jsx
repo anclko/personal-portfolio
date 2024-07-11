@@ -65,6 +65,13 @@ const Contact = () => {
                   <Input type="phone" placeholder="Phone Number" />
                 </div>
 
+                {/*text area*/}
+                <Textarea 
+                  className="h-[200px]" 
+                  placeholder="Leave your message here">
+                  
+                </Textarea>
+
               </form>
             </div>
 
