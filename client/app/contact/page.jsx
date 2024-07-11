@@ -10,12 +10,12 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        description: "(+46) 793 566 601"
+        description: "Available upon request"
     },
     {
         icon: <FaEnvelope />,
         title: "Email",
-        description: "ackoch@hotmail.com"
+        description: "anclko@hotmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
@@ -44,7 +44,8 @@ const Contact = () => {
               <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                 <h3 className="text-4xl text-accent">Looking forward to working together!</h3>
                 <p className="text-white/60">
-                  loren ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The form below does not work as function is not implemented yet but was just used as a showcase of form implementation. 
+                  <br />Please use the info on this page for contact purposes!
                 </p>
 
                 {/*input*/}
