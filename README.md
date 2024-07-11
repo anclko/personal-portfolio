@@ -20,6 +20,22 @@ You can view the live site here: [Personal Portfolio](https://personal-portfolio
 
 ## Installation
 
-```git clone https://github.com/your-username/personal-portfolio.git
-cd personal-portfolio```
+Clone repository:
+```git clone https://github.com/your-username/personal-portfolio.git```
 
+Enter client folder:
+```cd client```
+
+Open [local host](http://localhost:3000) with your browser to see the result.
+
+## Deployment
+
+This site is deployed using [Vercel](https://vercel.com).
+
+## Deployment
+
+This project is licensed under the MIT License.
+
+## Contact
+
+Feel free to reach out to me via the email on the site or directly at [this email](mailto:anclko@hotmail.com)
