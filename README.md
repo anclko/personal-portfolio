@@ -4,7 +4,7 @@ Welcome to my personal portfolio site! This site is designed to host my projects
 
 ## Live Site
 
-You can view the live site here: [Personal Portfolio](https://personal-portfolio-gv490ujgg-anclkos-projects.vercel.app)
+You can view the live site here: [Personal Portfolio](https://www.anclko.com)
 
 ## Features
 
@@ -21,10 +21,13 @@ You can view the live site here: [Personal Portfolio](https://personal-portfolio
 ## Installation
 
 Clone repository:
-```git clone https://github.com/your-username/personal-portfolio.git```
+```git clone https://github.com/anclko/personal-portfolio.git```
 
 Enter client folder:
 ```cd client```
+
+Run:
+```npm run dev```
 
 Open [local host](http://localhost:3000) with your browser to see the result.
 
@@ -32,7 +35,7 @@ Open [local host](http://localhost:3000) with your browser to see the result.
 
 This site is deployed using [Vercel](https://vercel.com).
 
-## Deployment
+## Licence
 
 This project is licensed under the MIT License.
 
