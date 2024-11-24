@@ -26,6 +26,9 @@ Clone repository:
 Enter client folder:
 ```cd client```
 
+Run:
+```npm run dev```
+
 Open [local host](http://localhost:3000) with your browser to see the result.
 
 ## Deployment
