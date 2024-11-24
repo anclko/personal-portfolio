@@ -40,42 +40,42 @@ const projects = [
         category: "Fullstack",
         title: "Online Resume/Portfolio",
         description: 
-          "loren ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "A website that acts a resume to showcase my experience, education and collection of projects that I have worked on.",
         stack: 
         [
-            { name: "Html 5" }, { name: "Css 3" }, { name: "Javascript"}, { name: "Node.js"}, { name: "Express.js"},
+            { name: "Next.js" }, { name: "Javascript"}, { name: "Framer Motion"}
         ],
         image: '/assets/work/Project2.jpg',
-        live: '',
-        github: '',
+        live: 'https://www.anclko.com/',
+        github: 'https://github.com/anclko/personal-portfolio',
     },
     {
         num: "03",
-        category: "python",
-        title: "NPX - Journal App",
+        category: "Kotlin",
+        title: "Trygga Campus",
         description: 
-          "loren ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "'Trygga Campus' was developed in cooperation with AB Lotusmodellen for a Mobile Development final project. Firebase was used for the database. I created a video introducing the application to the company using Premiere Pro 2025.",
         stack: 
         [
-            { name: "python" }, { name: "agile methods" }, { name: "jira software"}
+            { name: "Kotlin" }, { name: "Jetpack Compose" }, { name: "Firebase"}, {name: "Premiere Pro 2025"}, {name: "Figma"}
         ],
-        image: '',
-        live: '',
-        github: '',
+        image: '/assets/work/Project3.jpg',
+        live: 'https://drive.google.com/file/d/1aV7b9xLmaFKdzx-TV30xixSAnBv16wVk/view?usp=sharing',
+        github: 'https://github.com/IbMoh/Trygga-Kampus',
     },
     {
         num: "04",
-        category: "java",
-        title: "Algorithm Analysis",
+        category: "Python",
+        title: "Usuku",
         description: 
-          "loren ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Usuku is a desktop app for Windows that allows users to journal, plan tasks and create challenges.",
         stack: 
         [
-            { name: "java" }
+            { name: "Python" }, {name: "Agile Methods"}, {name: "Unit Test"}, {name: "MySQL"}, {name: "Pylint"}, {name: "Flake8"}
         ],
         image: '',
-        live: '',
-        github: '',
+        live: 'https://github.com/ErickOlibo/NPX',
+        github: 'https://github.com/ErickOlibo/NPX',
     },
 ];
 
