@@ -31,7 +31,7 @@ import { motion } from "framer-motion"
 const about = {
     title: 'About Me',
     description: 
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    "I am a dedicated and reliable third year software development student, characterized by a strong work ethic and a keen enthusiasm for learning and professional growth. With educational foundations in software development principles, I am actively seeking full-time position work opportunities in full-stack development or mobile development where I can apply my theoretical knowledge in a practical setting.",
     info: [
         {
             fieldName: "Experience",
@@ -65,47 +65,47 @@ const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My Experience',
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    "I have gained leadership and operational management skills by leading high-performing teams, resolving complex challenges, and enhancing client satisfaction. The scope of my expertise includes advanced problem-solving, emotional engagement training, and efficient communication, alongside adaptability and decision-making in fast-paced, dynamic settings.",
     items: [
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Radisson Collection Hotel - Copenhagen, Denmark",
+            position: "Senior Guest Service Manager",
+            duration: "1 year, 1 month",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Nimb Hotel - Copenhagen, Denmark",
+            position: "Concierge & Front Office Agent",
+            duration: "2 years, 1 month",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Hotel D'Angleterre - Copenhagen, Denmark",
+            position: "Front Desk & Guest Relations Supervisor",
+            duration: "2 years, 5 months",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Old England Hotel - Bowness-on-Windermere, UK",
+            position: "Front Office Supervisor",
+            duration: "3 years, 2 months",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "PLataran Bali - Bali, Indonesia",
+            position: "Marketing Intern",
+            duration: "8 months",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Le Méridien Étoile - Paris, France",
+            position: "Housekeeping Intern",
+            duration: "3 months",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Restaurant Pierre Orsi - Lyon, France",
+            position: "Kitchen Commis Intern",
+            duration: "3 months",
         },
         {
-            company: "Company",
-            position: "Position",
-            duration: "Duration",
+            company: "Hotel de la Cité - Carcassonne, France",
+            position: "Front Office Intern",
+            duration: "6 months",
         },
     ]
 };
@@ -115,27 +115,17 @@ const education = {
     icon: '/assets/resume/cap.svg',
     title: 'My Education',
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    "I have a strong foundation in software development, with hands-on experience in mobile and full-stack development using technologies like Jetpack Compose, Kotlin, and the MERN stack. My diverse coursework also extends to machine learning, big data analysis, sustainable programming and Algorithms & Datastructures. My education has allowed me to create innovative, efficient, and user-focused solutions.",
     items: [
         {
-            institution: "School",
-            degree: "Degree",
-            duration: "Date",
+            institution: "Högskola Kristianstad",
+            degree: "Bachelor in Software Development",
+            duration: "3 years",
         },
         {
-            institution: "School",
-            degree: "Degree",
-            duration: "Date",
-        },
-        {
-            institution: "School",
-            degree: "Degree",
-            duration: "Date",
-        },
-        {
-            institution: "School",
-            degree: "Degree",
-            duration: "Date",
+            institution: "Vatel Business School",
+            degree: "Bachelor in Hotel & Tourism Management",
+            duration: "3 years",
         },
     ]
 };
@@ -144,7 +134,7 @@ const education = {
 const skill = {
     title: "My Skills",
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum tincidunt nec nec libero",
+    "In addition to the listed technical skills, I am proficient in Python, Java, Kotlin, Firebase, and MongoDB, with expertise in MVVM architecture, Agile methodologies, clean coding practices, and version control. I also excel in project management, time management, and deploying solutions using tools like Git and Vercel.",
     skillList: [
         {
             icon: <FaHtml5 />,
